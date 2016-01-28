@@ -1,14 +1,4 @@
-# Personal Project 1:
-
-Your proposal should have
-
-A project description
-Who uses it?
-What outputs do they need?
-What inputs are needed to generate those outputs?
-A list of technologies that you plan to use
-A well-defined and written-out feature list
-There are some constraints around what technologies MUST be present in your app. Check out Create and deploy a web app below.
+# Personal Project 1: Slots for Dinner?
 
 ## Project Description
 
