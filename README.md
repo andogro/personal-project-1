@@ -1,4 +1,4 @@
-# Personal Project 1: Slots for Dinner?
+# Personal Project 1: Slots for Dinner
 
 ## Project Description
 
