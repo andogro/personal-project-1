@@ -7,9 +7,12 @@ Slots for Dinner is a website that will help someone figure out what to eat for 
 ## Who Uses it
 Somebody hungry who doesn't want to figure out what to eat for dinner. Or someone who only has a short amount of time to make dinner and needs some recipes
 
+##Simple Wireframe
+https://wireframe.cc/hQ6SU0
+
 ## Technologies
 - html
-- css
+- css/bootstrap
 - postman
 - yummly api
 - javascript/jquery
