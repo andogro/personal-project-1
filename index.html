@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Slots for Dinner</title>    
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha256-daEYF2SGTkiPl4cmxH06AOMnZ+Hb8wBpvs7DqvceszY= sha512-xmSDqcgDrroCG8Sp/p0IArjjB3lO0m0Yde0tm1mOFD4BwmsvZnVNfHgw7icU6q4ScrTCQKCokxnYMy/hUUfGrg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class = "container">
+     <div class = "row">
+       <div class = "col-lg-8 col-lg-offset-2 white">
+        
+        <header>
+        <img src="images/header2.png">
+        </header>
+        
+        <section>
+          <div class="row">
+           <h2 class = "centered">Select Your Options</h2>
+            <div class="col-lg-4">
+            <h4> Type of Cuisine</h4>
+              <select class="form-control recipeChoice">
+                <option>any</option>
+                <option>American</option>
+                <option>Italian</option>
+                <option>Asian</option>
+                <option>Mexican</option>
+                <option>Southern & Soul Food</option>
+                <option>French</option>
+                <option>Southwestern</option>
+                <option>Barbecue</option>
+                <option>Indian</option>
+                <option>Chinese</option>
+                <option>Cajun & Creole</option>
+                <option>English</option>
+                <option>Mediterranean</option>
+                <option>Greek</option>
+                <option>Spanish</option>
+                <option>German</option>
+                <option>Thai</option>
+                <option>Moroccan</option>
+                <option>Irish</option>
+                <option>Japanese</option>
+                <option>Cuban</option>
+                <option>Hawaiin</option>
+                <option>Swedish</option>
+                <option>Hungarian</option>
+                <option>Portugese</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+            <h4>Dietary Options</h4>
+              <select class="form-control recipeRestrictions">
+                <option>none</option>
+                <option>Vegetarian</option>
+                <option>Vegan</option>
+                <option>Gluten-free</option>
+                <option>Gluten-free & vegetarian</option>
+                <option>Gluten-free & vegan</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+            <h4>Time</h4>
+            <select class="form-control recipeTime">
+                <option>none</option>
+                <option>10 min or less</option>
+                <option>20 min or less</option>
+                <option>30 min or less</option>
+                <option>30 min to 1 hour</option>
+                <option>more than 1 hour</option>
+              </select></div>
+          </div>
+         </section>
+
+        <section class="spin-button">
+         <button type="button" class="btn btn-info lg" id="testAPI">Dinner Spinner</button>
+        </section> 
+         
+         <section class="slot-container">
+
+              <div class="slotBox slot1">
+              <img src="images/steak.png">
+<!-- image source will be data["matches"][2]["smallImageUrls"][0] or  data["matches"][2]["imageUrlsBySize"]["90"]-->
+
+              <!-- <span> a href will be yummly address + id (http://www.yummly.com/recipe/ + data["matches"][0]["id"]</span> -->
+              </div>
+
+
+              <div class="slotBox slot2">
+              <img src="images/eggplant.png">
+              <span><a href="#">Really </a></span>
+              </div>
+
+
+              <div class="slotBox slot3">
+              <img src="images/bread.png">
+              <span><a href="#"></span>
+              </div>
+          </section> 
+
+<!--           Need to include attribution in bottom div after search
+          data["attribution"]["html"] -->
+
+         </div>
+        </div>
+       </div>   
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
