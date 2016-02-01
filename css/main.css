@@ -53,10 +53,16 @@ background-color: white;
 .slotBox {
   border: 1px solid #333;
   width: 150px;
+  height: 120px;
   margin: 15px 10px;
   padding: 8px 0px;
   display: inline-block;
   vertical-align: top;
+  overflow: hidden;
+}
+
+.boxImg {
+
 }
 
 /*.slot1 { float: left; }
@@ -66,7 +72,12 @@ background-color: white;
 
 
 #attribution {
+  display: none;
   text-align: center;
+}
+
+.textBelow {
+  font-size: 10px;
 }
 
 
