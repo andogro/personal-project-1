@@ -65,6 +65,10 @@ background-color: white;
 .clear { clear: both; }
 
 
+#attribution {
+  text-align: center;
+}
+
 
 .top {
   height: 200px;
