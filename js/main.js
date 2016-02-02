@@ -61,14 +61,14 @@ $(".spinner").on('click', function() {
       function setAttributes() {
       var attributes = response.attribution.html;
       $(".atts").remove();
-      $("#attribution").show("slow").append('<p class = "atts">'+attributes+'</p>');
+      $("#attribution").show(1000).append('<p class = "atts">'+attributes+'</p>');
       }
        
     // append 3 images from api to each of the ending divs (in last span with link)
       function requestRecipe (url, index) {
       $.get(url).done(function(res) {
         var link = res.matches[0].id;
-        var recipe = '<br><a href ="http://www.yummly.com/recipe/'+link+'">'+res.matches[0].recipeName+'</a>';
+        var recipe = '<br><a href ="http://www.yummly.com/recipe/'+link+'" target="_blank">'+res.matches[0].recipeName+'</a>';
         var image = '<a href ="http://www.yummly.com/recipe/'+link+'"><img src = "'+res.matches[0].smallImageUrls[0]+'">';       
         $('.tb'+index).append(image,recipe);
       });
