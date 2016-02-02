@@ -39,8 +39,9 @@ function animateSlots() {
 $(".spinner").on('click', function() {
   var choice = $(".recipeChoice").val();
   var restrictions = $(".recipeRestrictions").val(); 
-  var responseType = $(".recipeTime").val();
-  var url = 'http://api.yummly.com/v1/api/recipes?_app_id='+api_id+'&_app_key='+api_key+'&q=Main%20Dishes&allowedCuisine%5B%5D=cuisine%5Ecuisine-'+choice+restrictions+'&requirePictures=true';
+  var time = $(".recipeTime").val();
+  var url = 'http://api.yummly.com/v1/api/recipes?_app_id='+api_id+'&_app_key='+api_key+'&q=Main%20Dishes&allowedCuisine%5B%5D=cuisine%5Ecuisine-'+choice+restrictions+time+'&requirePictures=true';
+  console.log(url);
   var settings = {
     "async": true,
     "crossDomain": true,
@@ -48,7 +49,6 @@ $(".spinner").on('click', function() {
     "method": "GET",
     "dataType": "jsonp"
     };
-
 
 //ajax done function 
   $.ajax(settings).done(function (response) {

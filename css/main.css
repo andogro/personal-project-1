@@ -1,12 +1,10 @@
-/* add custom styles */
 
-/* use body and rem tags possibly */
+/************** Global styles */
 body {
   background-image: url("../images/felt-background1.jpg");
 }
 
 header {
-/*  margin: 0 auto;*/
   text-align: center;
 }
 
@@ -31,6 +29,8 @@ img {
     text-align: center;
     border-bottom: 1px solid #555;
 }
+
+/**************Main Section*/
 
 .slots {
   width: 100%;
@@ -64,11 +64,6 @@ background-color: white;
 .boxImg {
 
 }
-
-/*.slot1 { float: left; }
-.slot2 { margin: 0 auto;}
-.slot3 { float: right; }*/
-.clear { clear: both; }
 
 
 #attribution {
