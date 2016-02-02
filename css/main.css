@@ -23,19 +23,15 @@ img {
   border-radius: 10px;
 }
 
-.centered {
-    margin-bottom: 10px;
-    margin: 0px 20px 10px 20px;
-    text-align: center;
-    border-bottom: 1px solid #555;
-}
 
 /**************Main Section*/
 
-.slots {
-  width: 100%;
-  margin: 0 auto;
+.error {
+  display: none;
+  text-align: center;
 }
+
+/*Top Button*/
 
 .spin-button {
     margin: 20px 0px;
@@ -43,11 +39,22 @@ img {
     background-color: white;
 }
 
-.slot-container {
-text-align: center;
-margin: 0 auto;
-background-color: white;
+.centered {
+    margin-bottom: 10px;
+    margin: 0px 20px 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
 
+.slots {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slot-container {
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
 }
 
 .slotBox {
@@ -61,22 +68,13 @@ background-color: white;
   overflow: hidden;
 }
 
-.boxImg {
-
-}
-
-
-#attribution {
-  display: none;
-  text-align: center;
-}
-
 .textBelow {
   font-size: 10px;
 }
 
+/*****************Bottom div*/
 
-.top {
-  height: 200px;
-  background-color: #0066ff;
+#attribution {
+  display: none;
+  text-align: center;
 }
