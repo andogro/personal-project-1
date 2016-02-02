@@ -22,54 +22,55 @@
             <div class="col-lg-4">
             <h4> Type of Cuisine</h4>
               <select class="form-control recipeChoice">
-                <option>any</option>
-                <option>American</option>
-                <option>Italian</option>
-                <option>Asian</option>
-                <option>Mexican</option>
-                <option>Southern & Soul Food</option>
-                <option>French</option>
-                <option>Southwestern</option>
-                <option>Barbecue</option>
-                <option>Indian</option>
-                <option>Chinese</option>
-                <option>Cajun & Creole</option>
-                <option>English</option>
-                <option>Mediterranean</option>
-                <option>Greek</option>
-                <option>Spanish</option>
-                <option>German</option>
-                <option>Thai</option>
-                <option>Moroccan</option>
-                <option>Irish</option>
-                <option>Japanese</option>
-                <option>Cuban</option>
-                <option>Hawaiin</option>
-                <option>Swedish</option>
-                <option>Hungarian</option>
-                <option>Portugese</option>
+                <option value="">any</option>
+                <option value ="american">American</option>
+                <option value ="italian">Italian</option>
+                <option value ="kid-friendly">Kid Friendly</option>
+                <option value ="asian">Asian</option>
+                <option value="mexican">Mexican</option>
+                <option value="southern">Southern & Soul Food</option>
+                <option value ="french">French</option>
+                <option value ="southwestern">Southwestern</option>
+                <option value = "barbecue-bbq">Barbecue</option>
+                <option value ="indian">Indian</option>
+                <option value ="chinese">Chinese</option>
+                <option value ="cajun">Cajun & Creole</option>
+                <option value ="english">English</option>
+                <option value ="mediterranean">Mediterranean</option>
+                <option value = "greek">Greek</option>
+                <option value ="spanish">Spanish</option>
+                <option value ="german">German</option>
+                <option value ="thai">Thai</option>
+                <option value ="moroccan">Moroccan</option>
+                <option value ="irish">Irish</option>
+                <option value ="japanese">Japanese</option>
+                <option value ="cuban">Cuban</option>
+                <option value = "hawaiian">Hawaiian</option>
+                <option value ="swedish">Swedish</option>
+                <option value ="hungarian">Hungarian</option>
+                <option value ="portugese">Portugese</option>
               </select>
             </div>
             <div class="col-lg-4">
             <h4>Dietary Options</h4>
               <select class="form-control recipeRestrictions">
-                <option>none</option>
-                <option>Vegetarian</option>
-                <option>Vegan</option>
-                <option>Gluten-free</option>
-                <option>Gluten-free & vegetarian</option>
-                <option>Gluten-free & vegan</option>
+                <option value ="">none</option>
+                <option value = "&allowedDiet[]=388^Lacto vegetarian">Vegetarian</option>
+                <option value ="&allowedDiet[]=386^Vegan">Vegan</option>
+                <option value ="&allowedAllergy[]=393^Gluten-Free" >Gluten-free</option>
+                <option value ="&allowedAllergy[]=393^Gluten-Free&allowedDiet[]=388^Lacto vegetarian">Gluten-free & vegetarian</option>
+                <option value ="&allowedAllergy[]=393^Gluten-Free&allowedDiet[]=386^Vegan">Gluten-free & vegan</option>
               </select>
             </div>
             <div class="col-lg-4">
             <h4>Time</h4>
             <select class="form-control recipeTime">
-                <option>none</option>
-                <option>10 min or less</option>
-                <option>20 min or less</option>
-                <option>30 min or less</option>
-                <option>30 min to 1 hour</option>
-                <option>more than 1 hour</option>
+                <option>any</option>
+                <option value = "600">10 min or less</option>
+                <option value = "1200">20 min or less</option>
+                <option value = "1800">30 min or less</option>
+                <option value = "3600">30 min to 1 hour</option>
+                <option value = "3601">more than 1 hour</option>
               </select></div>
           </div>
          </section>
@@ -81,22 +82,30 @@
          <section class="slot-container">
 
               <div class="slotBox slot1">
-              <img src="images/steak.png">
-<!-- image source will be data["matches"][2]["smallImageUrls"][0] or  data["matches"][2]["imageUrlsBySize"]["90"]-->
+               <div class = "boxImage1">
+                 <img src="images/steak.png">
+               </div>
+               <span class ="textBelow tb1"> </span> 
+              <!-- image source will be data["matches"][2]["smallImageUrls"][0] or  data["matches"][2]["imageUrlsBySize"]["90"]-->
 
-              <!-- <span> a href will be yummly address + id (http://www.yummly.com/recipe/ + data["matches"][0]["id"]</span> -->
+              <!-- <span> a href will be yummly address + id (http://www.yummly.com/recipe/ + data["matches"][0]["id"]</span> --> 
+             
               </div>
 
 
               <div class="slotBox slot2">
-              <img src="images/eggplant.png" class="boxImage">
-              <span><a href="#">Really </a></span>
+              <div class = "boxImage2">
+                <img src="images/eggplant.png">
+              </div>
+              <span class ="textBelow tb2"> </span>
               </div>
 
 
               <div class="slotBox slot3">
+              <div class = "boxImage3">
               <img src="images/bread.png">
-              <span><a href="#"></a></span>
+              </div>
+              <span class ="textBelow tb3"> </span> 
               </div>
           </section> 
 
