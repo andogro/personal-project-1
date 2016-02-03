@@ -1,7 +1,7 @@
-// add scripts
 $(document).on('ready', function() {
   console.log('sanity check!');
    });
+
 // assign global variables
   var api_id = '5d0de430';
   var api_key = 'e854c40c98b9131e8685322b1db966c5';
@@ -11,22 +11,18 @@ $(document).on('ready', function() {
     var slotImages = ["images/beer.png", "images/bread.png", "images/broccoli.png", "images/burger.png", "images/carrot.png", "images/corn.png","images/eggplant.png", "images/fries.png", "images/grapefruit.png", "images/green_pea.png", "images/hotdog.png", "images/mushroom.png", "images/peach.png", "images/pear.png", "images/pepper.png", "images/pizza.png", "images/red_pepper.png", "images/sausage.png", "images/steak.png", "images/turkey.png", "images/wine.png"];
        for (i=0; i<slotImages.length; i++) {
        var rand = Math.floor((Math.random() * (slotImages.length -1)) + 1);
-       $('.boxImage1').append('<img src ='+slotImages[rand]+'>');
-       var rand = Math.floor((Math.random() * (slotImages.length -1)) + 1);
-       $('.boxImage2').append('<img src ='+slotImages[rand]+'>');
-       var rand = Math.floor((Math.random() * (slotImages.length -1)) + 1);
-       $('.boxImage3').append('<img src ='+slotImages[rand]+'>');
+        for (j=1; j<4; j++) {
+        rand = Math.floor((Math.random() * (slotImages.length -1)) + 1);
+       $('.boxImage'+j).append('<img src ='+slotImages[rand]+'>');
+       }
       }
     };
 
 //function that runs through images and fades in recipe, clears div each time
   function animateSlots() {
     for (i=1; i<4; i++) {
-     $(".boxImage"+i).empty();
      $(".tb"+i).empty();
-     $(".boxImage"+i).css("margin-top", "0px").show();
-     $(".boxImage"+i).animate({marginTop: "-2070px"}, 3000);
-     $(".boxImage"+i).fadeOut(1000, function() {
+     $(".boxImage"+i).empty().css("margin-top", "0px").show().animate({marginTop: "-2070px"}, 3000).fadeOut(1000, function() {
      $(".textBelow").fadeIn(1000);
         });
       }
@@ -63,8 +59,8 @@ $(document).on('ready', function() {
     // append 3 images from api to each of the ending divs (in last span with link)
         function requestRecipe (url, index) {
         $.get(url).done(function(res) {          
-          var link = res.matches[0].id;
-          var recipeURL = 'http://api.yummly.com/v1/api/recipe/'+link+'?_app_id='+api_id+'&_app_key='+api_key; 
+          var initialLink = res.matches[0].id;
+          var recipeURL = 'http://api.yummly.com/v1/api/recipe/'+initialLink+'?_app_id='+api_id+'&_app_key='+api_key; 
             $.get(recipeURL).done(function(res2) {
                var recipeLink = res2.source.sourceRecipeUrl;
                var recipeName = res2.name;
@@ -85,7 +81,7 @@ $(document).on('ready', function() {
         for (i=1; i<4; i++) {
            var maxResults = response.totalMatchCount;
            if(maxResults === 0) {
-            $('.tb'+i).append("<img src=images/no_result.png><br>No Dice, Change Choices and Try Again")
+            $('.tb'+i).append("<img src=images/no_result.png>");
            }
            var randomResult = Math.floor((Math.random() * (maxResults-1) ) + 1);
            var newURL = url + '&maxResult=1&start='+ randomResult;
@@ -95,5 +91,4 @@ $(document).on('ready', function() {
     }).fail(function(error1){
               $('.error').show().append("<p>This machine is out of order. Please try again or come back later.</p>")// handle errors
            });
-
-});
+ });
