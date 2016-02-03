@@ -1,6 +1,7 @@
 // assign global variables
-  var api_id = '5d0de430';
+  var api_id = '5d0de43';
   var api_key = 'e854c40c98b9131e8685322b1db966c5';
+  error_message = '<p>This machine is out of order. Please try again or come back later.</p>';
 
 // Array of images that get appended to the boxImages div  
     function populateSlots() {
