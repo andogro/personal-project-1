@@ -1,0 +1,42 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/5.3.0/bin/node /Users/andrewgross/.npm-packages/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.3.0
+[debug] Time:         Thu Feb 04 2016 09:37:25 GMT-0700 (MST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/slotsfordinner/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/slotsfordinner/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'slotsfordinner'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing public directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/slotsfordinner/uploads/-K9h8J4PV9KtRjcntj2u?token=XXX&fileCount=30&message= 
+[debug] TypeError: Cannot read property 'error' of undefined
+    at Request._callback (/Users/andrewgross/.npm-packages/lib/node_modules/firebase-tools/lib/api.js:31:22)
+    at Request.self.callback (/Users/andrewgross/.npm-packages/lib/node_modules/firebase-tools/node_modules/request/request.js:199:22)
+    at emitTwo (events.js:87:13)
+    at Request.emit (events.js:172:7)
+    at Request.<anonymous> (/Users/andrewgross/.npm-packages/lib/node_modules/firebase-tools/node_modules/request/request.js:1036:10)
+    at emitOne (events.js:82:20)
+    at Request.emit (events.js:169:7)
+    at IncomingMessage.<anonymous> (/Users/andrewgross/.npm-packages/lib/node_modules/firebase-tools/node_modules/request/request.js:963:12)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[error] 
+[error] Error: File upload failed: The request timed out.
+[debug] Error Context: {
+  "duration": 120037,
+  "fileCount": 0,
+  "ip": "128.177.172.220",
+  "start": 1454603846803,
+  "status": "failed",
+  "statusMessage": "The request timed out.",
+  "uid": "-K9DzwVva8jzS7Njc7Es",
+  "uploadedCount": 0
+}

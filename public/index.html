@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="utf-8">
+    <title>Slots for Dinner</title>    
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha256-daEYF2SGTkiPl4cmxH06AOMnZ+Hb8wBpvs7DqvceszY= sha512-xmSDqcgDrroCG8Sp/p0IArjjB3lO0m0Yde0tm1mOFD4BwmsvZnVNfHgw7icU6q4ScrTCQKCokxnYMy/hUUfGrg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <div class="container">
+     <div class="row">
+       <div class="col-lg-8 col-lg-offset-2 white">
+        
+        <header>
+        <img src="images/header2.png">
+        </header>
+        
+        <div class="alert alert-danger error" role="alert">
+        </div>
+
+        <section>
+          <div class="row">
+           <h2 class="centered">Select Your Options</h2>
+            <div class="col-lg-4">
+            <h4> Type of Cuisine</h4>
+              <select class="form-control recipeChoice">
+                <option value="">any</option>
+                <option value="american">American</option>
+                <option value="italian">Italian</option>
+                <option value="kid-friendly">Kid Friendly</option>
+                <option value="asian">Asian</option>
+                <option value="mexican">Mexican</option>
+                <option value="southern">Southern & Soul Food</option>
+                <option value="french">French</option>
+                <option value="southwestern">Southwestern</option>
+                <option value= "barbecue-bbq">Barbecue</option>
+                <option value="indian">Indian</option>
+                <option value="chinese">Chinese</option>
+                <option value="cajun">Cajun & Creole</option>
+                <option value="english">English</option>
+                <option value="mediterranean">Mediterranean</option>
+                <option value= "greek">Greek</option>
+                <option value="spanish">Spanish</option>
+                <option value="german">German</option>
+                <option value="thai">Thai</option>
+                <option value="moroccan">Moroccan</option>
+                <option value="irish">Irish</option>
+                <option value="japanese">Japanese</option>
+                <option value="cuban">Cuban</option>
+                <option value= "hawaiian">Hawaiian</option>
+                <option value="swedish">Swedish</option>
+                <option value="hungarian">Hungarian</option>
+                <option value="portugese">Portugese</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+            <h4>Dietary Options</h4>
+              <select class="form-control recipeRestrictions">
+                <option value="">none</option>
+                <option value="&allowedDiet[]=388^Lacto vegetarian">Vegetarian</option>
+                <option value="&allowedDiet[]=386^Vegan">Vegan</option>
+                <option value="&allowedAllergy[]=393^Gluten-Free" >Gluten-free</option>
+                <option value="&allowedAllergy[]=393^Gluten-Free&allowedDiet[]=388^Lacto vegetarian">Gluten-free & vegetarian</option>
+                <option value="&allowedAllergy[]=393^Gluten-Free&allowedDiet[]=386^Vegan">Gluten-free & vegan</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+            <h4>Time</h4>
+            <select class="form-control recipeTime">
+                <option value="">any</option>
+                <option value="&maxTotalTimeInSeconds=600">10 min or less</option>
+                <option value="&maxTotalTimeInSeconds=1200">20 min or less</option>
+                <option value="&maxTotalTimeInSeconds=1800">30 min or less</option>
+                <option value="&maxTotalTimeInSeconds=3600">1 hour or less</option>
+                <option value="&maxTotalTimeInSeconds=7200">2 hours or less</option>
+              </select></div>
+          </div>
+         </section>
+
+        <section class="spin-button">
+         <button type="button" class="btn btn-info lg spinner">Dinner Spinner</button>
+        </section> 
+         
+         <section class="slot-container">
+              <div class="slotBox slot1">
+               <div class="boxImage1">
+                 <img src="images/steak.png">
+               </div>
+               <span class="textBelow tb1"> </span> 
+              </div>
+              <div class="slotBox slot2">
+                <div class="boxImage2">
+                  <img src="images/eggplant.png">
+                </div>
+                <span class="textBelow tb2"> </span>
+              </div>
+              <div class="slotBox slot3">
+                <div class="boxImage3">
+                  <img src="images/bread.png">
+                </div>
+                <span class="textBelow tb3"> </span> 
+              </div>
+          </section> 
+          
+          <section>
+             <div id="attribution">
+               <button type="button" class="btn btn-success lg spinner">No Go? Spin Again</button><br><br>          
+             </div>
+          </section>
+
+       </div>
+      </div>
+     </div>   
+     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/main.js"></script>
+     <script type="text/javascript" src="js/dom.js"></script>
+  </body>
+</html>
