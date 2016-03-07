@@ -24,7 +24,7 @@ https://wireframe.cc/hQ6SU0
 on 3 recipe options.
 - the ability to click on each recipe which will expand the recipe for the user.
 - the ability to spin again if you don't like the presented choices.
-
+- currently deployed at https://slotsfordinner.firebaseapp.com/
 
 
 
